@@ -2,7 +2,7 @@
 $usuario = $_POST['usuario'];
 $clave = $_POST['contraseña'];
 
-if ($usuario == "admin" and $clave =="admin") {
+if ($usuario == "admin" and $clave =="mensajes") {
     header("location:mensajes.php");
 }else {
     echo '<script language="javascript"> ';
