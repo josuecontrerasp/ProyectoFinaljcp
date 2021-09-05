@@ -1,3 +1,4 @@
+<?php include('bd.php'); ?>
 <!doctype html>
 <html lang="es">
   <head>
@@ -27,11 +28,12 @@
 <br><br><br>
 
 
-<form action="guardar.php" method="post">
-  <div class="col-12">
+
+<div class="container"> 
+<div class="col-12">
 <table class="table">
   <thead>
-    <tr>
+    <tr class="table-dark">
       <th scope="col">No.Mensaje</th>
       <th scope="col">Nombre</th>
       <th scope="col">Teléfono</th>
@@ -42,17 +44,27 @@
 
   <tbody>
 <?php 
-$query="SELECT * FROM mensajes"
-$resultat=mysqli_query($conn,$query);
-?>
+$query="SELECT * FROM mensajes";
+$resultado=mysqli_query($conn,$query);
+while($row=mysqli_fetch_array($resultado)){ ?>
+<tr class="table-dark">
+  <td><?php echo $row['nomensaje'] ?></td>
+  <td><?php echo $row['nombre'] ?></td>
+  <td><?php echo $row['telefono'] ?></td>
+  <td><?php echo $row['correo'] ?></td>
+  <td><?php echo $row['mensaje'] ?></td>
+</tr>
+
+<?php } ?>
 
   </tbody>
 </table>
 </div>
-</form>
+</div> 
 
 
 
+<br><br><br><br><br><br><br><br>
 
 <footer class="bg-light text-center text-lg-start">
   
