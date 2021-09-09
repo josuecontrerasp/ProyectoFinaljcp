@@ -17,7 +17,7 @@
   <div class="btn-group w-100" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-warning"><a href="index.html" style="text-decoration: none">Inicio</a></button>
         <button type="button" class="btn btn-info"><a href="tiendas.html" style="text-decoration: none">Tienda</a></button>
-        <button type="button" class="btn btn-danger"><a href="contactos.html" style="text-decoration: none">Contáctenos</a></button>
+        <button type="button" class="btn btn-danger"><a href="contactos.php" style="text-decoration: none">Contáctenos</a></button>
       </div>
       <br><br>
       <div class="container">
